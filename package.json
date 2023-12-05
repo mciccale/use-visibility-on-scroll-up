@@ -1,0 +1,40 @@
+{
+  "name": "use-visibility-on-scroll-up",
+  "version": "1.0.2",
+  "description": "Toggle the visibility on scroll of elements in your React app easily.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "esbuild src/index.ts --bundle --minify --platform=node --target=node12 --outdir=dist --external:react --external:react-dom",
+    "build:types": "tsc --emitDeclarationOnly",
+    "test": "jest"
+  },
+  "keywords": [
+    "react",
+    "hooks",
+    "scroll",
+    "visibility"
+  ],
+  "author": "Marco Ciccalè Baztán",
+  "license": "ISC",
+  "peerDependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.23.5",
+    "@babel/preset-env": "^7.23.5",
+    "@babel/preset-typescript": "^7.23.3",
+    "@testing-library/jest-dom": "^6.1.5",
+    "@testing-library/react": "^14.1.2",
+    "@types/jest": "^29.5.10",
+    "@types/react": "^18.2.42",
+    "babel-jest": "^29.7.0",
+    "esbuild": "^0.19.8",
+    "jest": "^29.7.0",
+    "jest-environment-jsdom": "^29.7.0"
+  },
+  "jest": {
+    "testEnvironment": "jsdom"
+  }
+}

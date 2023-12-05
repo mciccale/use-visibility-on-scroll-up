@@ -1,0 +1,20 @@
+# Source files
+src/
+
+# Test files
+test/
+
+# Configuration files
+tsconfig.json
+babel.config.js
+.gitignore
+
+# Documentation
+CHANGELOG.md
+LICENSE
+
+# Miscellaneous
+.DS_Store
+
+# Node modules
+node_modules/
